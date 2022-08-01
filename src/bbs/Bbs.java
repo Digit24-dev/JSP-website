@@ -6,6 +6,7 @@ public class Bbs {
 	private String userID;
 	private String bbsDate;
 	private String bbsContent;
+	
 	public String getBbsContent() {
 		return bbsContent;
 	}
