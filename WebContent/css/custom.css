@@ -1,0 +1,8 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+*{ /* 본문 */
+	font-family : 'Nanum Gothic';
+}
+h1{ /* 제목부 */
+	font-family : 'Hanna';
+}

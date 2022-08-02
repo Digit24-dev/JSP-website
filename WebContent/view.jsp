@@ -9,7 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width", initial-scale="1">
 <link rel="stylesheet" href="css/bootstrap.css">
-
+<link rel="stylesheet" href="css/custom.css">
 <title>JSP 게시판 웹 사이트</title>
 </head>
 <body>
@@ -26,7 +26,7 @@
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
 			script.println("alert('유효하지 않는 글입니다.')");
-			script.println("history.back()");
+			script.println("location.href = 'bbs.jsp'");
 			script.println("</script>");
 		}
 		Bbs bbs = new BbsDAO().getBbs(bbsID);
@@ -112,7 +112,7 @@
 				if(userID != null && userID.equals(bbs.getUserID())) {
 			%>
 				<a href="update.jsp?bbsID=<%= bbsID %>"class="btn btn-primary">수정</a>
-				<a href="deleteAction.jsp?bbsID=<%= bbsID %>"class="btn btn-primary">삭제</a>
+				<a onclick="return confirm('정말로 삭제하시겠습니까?')" href="deleteAction.jsp?bbsID=<%= bbsID %>"class="btn btn-primary">삭제</a>
 			<%
 				}
 			%>
