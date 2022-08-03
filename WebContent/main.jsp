@@ -102,6 +102,18 @@
 			</a>
 		</div>
 	</div>
+	
+	<div class="container">
+	<br>
+		<div class="progress">
+		  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="50" aria-valuemax="100"></div>
+		</div>
+		
+		<button type="button" class="btn btn-primary">
+		  Notifications <span class="badge badge-light">4</span>
+		</button>
+	</div>
+	
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 </body>
