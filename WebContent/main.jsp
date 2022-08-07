@@ -6,6 +6,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width", initial-scale="1">
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/custom.css">
 
@@ -67,6 +70,17 @@
 			%>
 		</div>
 	</nav>
+	
+	<ul class="nav nav-pills nav-stacked">
+	  <li class="active">
+	    <a>
+	      <span class="badge pull-right">Hello~ click me if u can~</span>
+	      Home
+	    </a>
+	  </li>
+	  
+	</ul>
+	
 	<div class="container">
 		<div class="jumbotron">
 			<div class="container">
@@ -109,12 +123,22 @@
 		  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="50" aria-valuemax="100"></div>
 		</div>
 		
+		<div class="dropdown">
+		  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    Dropdown button
+		  </button>
+		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		    <a class="dropdown-item" href="#">Tag1</a>
+		    <a class="dropdown-item" href="#">Tag2</a>
+		    <a class="dropdown-item" href="#">Tag3</a>
+		  </div>
+		</div>
+		
 		<button type="button" class="btn btn-primary">
 		  Notifications <span class="badge badge-light">4</span>
 		</button>
 	</div>
 	
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="js/bootstrap.js"></script>
+	
 </body>
 </html>
